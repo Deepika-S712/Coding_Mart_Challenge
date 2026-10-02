@@ -1,0 +1,16 @@
+{
+  "name": "college-management-system",
+  "version": "1.0.0",
+  "description": "College Management System (CMS) - Single Project with Student, Faculty, and Accountant Modules",
+  "private": true,
+  "scripts": {
+    "install:all": "npm install && npm --prefix backend install && npm --prefix frontend install",
+    "server": "npm --prefix backend start",
+    "client": "npm --prefix frontend run dev",
+    "dev": "concurrently -n \"BACKEND,FRONTEND\" -c \"blue,green\" \"npm run server\" \"npm run client\"",
+    "build": "npm --prefix frontend run build"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

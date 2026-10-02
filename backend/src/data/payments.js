@@ -1,0 +1,167 @@
+export const payments = [
+  {
+    id: "PAY001",
+    receiptNo: "REC-2026-1001",
+    studentId: "STU001",
+    studentName: "Kamal Sandeep",
+    rollNo: "21CS001",
+    department: "Computer Science & Engineering",
+    semester: "Semester 5",
+    amount: 65000,
+    paymentMethod: "UPI", // Cash, UPI, Card, Bank Transfer, Online
+    transactionId: "UPI/261001/98450123",
+    paymentDate: "2026-10-01",
+    collectedBy: "Suresh Narayanan (ACC001)",
+    notes: "Semester 5 Tuition fee advance installment"
+  },
+  {
+    id: "PAY002",
+    receiptNo: "REC-2026-1002",
+    studentId: "STU002",
+    studentName: "Arun Kumar",
+    rollNo: "21CS002",
+    department: "Computer Science & Engineering",
+    semester: "Semester 5",
+    amount: 84500,
+    paymentMethod: "Online",
+    transactionId: "NETBNK-HDFC-9923812",
+    paymentDate: "2026-10-01",
+    collectedBy: "Suresh Narayanan (ACC001)",
+    notes: "Full fee clearance including CAB charges"
+  },
+  {
+    id: "PAY003",
+    receiptNo: "REC-2026-1003",
+    studentId: "STU003",
+    studentName: "Priya Sharma",
+    rollNo: "21CS003",
+    department: "Computer Science & Engineering",
+    semester: "Semester 5",
+    amount: 77500,
+    paymentMethod: "Card",
+    transactionId: "POS-ICICI-883192",
+    paymentDate: "2026-09-28",
+    collectedBy: "Suresh Narayanan (ACC001)",
+    notes: "Fee paid post Merit Scholarship adjustment"
+  },
+  {
+    id: "PAY004",
+    receiptNo: "REC-2026-1004",
+    studentId: "STU005",
+    studentName: "Divya S",
+    rollNo: "21CS005",
+    department: "Computer Science & Engineering",
+    semester: "Semester 5",
+    amount: 62500,
+    paymentMethod: "Bank Transfer",
+    transactionId: "NEFT-SBI-4402198",
+    paymentDate: "2026-09-27",
+    collectedBy: "Suresh Narayanan (ACC001)",
+    notes: "Direct bank transfer from parent account"
+  },
+  {
+    id: "PAY005",
+    receiptNo: "REC-2026-1005",
+    studentId: "STU006",
+    studentName: "Karthik Venkatesh",
+    rollNo: "21CS006",
+    department: "Computer Science & Engineering",
+    semester: "Semester 5",
+    amount: 50000,
+    paymentMethod: "Cash",
+    transactionId: "CSH-COUNTER-0442",
+    paymentDate: "2026-09-25",
+    collectedBy: "Suresh Narayanan (ACC001)",
+    notes: "Cash counter deposit - Installment 1"
+  },
+  {
+    id: "PAY006",
+    receiptNo: "REC-2026-1006",
+    studentId: "STU007",
+    studentName: "Ananya Iyer",
+    rollNo: "21CS007",
+    department: "Computer Science & Engineering",
+    semester: "Semester 5",
+    amount: 64500,
+    paymentMethod: "UPI",
+    transactionId: "UPI/260924/8712361",
+    paymentDate: "2026-09-24",
+    collectedBy: "Suresh Narayanan (ACC001)",
+    notes: "Fee cleared via UPI QR"
+  }
+];
+
+export const receipts = [
+  {
+    receiptNo: "REC-2026-1001",
+    paymentId: "PAY001",
+    studentId: "STU001",
+    studentName: "Kamal Sandeep",
+    rollNo: "21CS001",
+    department: "Computer Science & Engineering",
+    semester: "Semester 5",
+    academicYear: "2026-2027",
+    amount: 65000,
+    paymentMethod: "UPI",
+    transactionId: "UPI/261001/98450123",
+    date: "2026-10-01",
+    collectedBy: "Suresh Narayanan",
+    items: [
+      { description: "Tuition Fee (Semester 5)", amount: 65000 }
+    ],
+    totalFee: 87500,
+    totalPaidToDate: 65000,
+    balanceRemaining: 22500,
+    status: "PAID - PARTIAL"
+  },
+  {
+    receiptNo: "REC-2026-1002",
+    paymentId: "PAY002",
+    studentId: "STU002",
+    studentName: "Arun Kumar",
+    rollNo: "21CS002",
+    department: "Computer Science & Engineering",
+    semester: "Semester 5",
+    academicYear: "2026-2027",
+    amount: 84500,
+    paymentMethod: "Online",
+    transactionId: "NETBNK-HDFC-9923812",
+    date: "2026-10-01",
+    collectedBy: "Suresh Narayanan",
+    items: [
+      { description: "Tuition Fee (Semester 5)", amount: 65000 },
+      { description: "Examination Fee", amount: 3500 },
+      { description: "College Bus / CAB Fee (Route 4)", amount: 12000 },
+      { description: "Other Institutional Amenities", amount: 4000 }
+    ],
+    totalFee: 84500,
+    totalPaidToDate: 84500,
+    balanceRemaining: 0,
+    status: "PAID - FULL"
+  },
+  {
+    receiptNo: "REC-2026-1003",
+    paymentId: "PAY003",
+    studentId: "STU003",
+    studentName: "Priya Sharma",
+    rollNo: "21CS003",
+    department: "Computer Science & Engineering",
+    semester: "Semester 5",
+    academicYear: "2026-2027",
+    amount: 77500,
+    paymentMethod: "Card",
+    transactionId: "POS-ICICI-883192",
+    date: "2026-09-28",
+    collectedBy: "Suresh Narayanan",
+    items: [
+      { description: "Tuition Fee (Semester 5)", amount: 40000 },
+      { description: "Examination Fee", amount: 3500 },
+      { description: "Hostel & Mess Charges", amount: 30000 },
+      { description: "Other Institutional Amenities", amount: 4000 }
+    ],
+    totalFee: 77500,
+    totalPaidToDate: 77500,
+    balanceRemaining: 0,
+    status: "PAID - FULL"
+  }
+];

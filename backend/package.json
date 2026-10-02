@@ -1,0 +1,16 @@
+{
+  "name": "cms-backend",
+  "version": "1.0.0",
+  "description": "CMS In-Memory REST Backend",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "morgan": "^1.10.0"
+  }
+}
