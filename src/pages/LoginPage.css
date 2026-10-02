@@ -1,0 +1,158 @@
+.cms-login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--cms-bg-sidebar);
+  background-image: 
+    radial-gradient(circle at 15% 15%, rgba(79, 70, 229, 0.15) 0%, transparent 40%),
+    radial-gradient(circle at 85% 85%, rgba(56, 189, 248, 0.1) 0%, transparent 40%);
+  padding: var(--cms-space-4);
+}
+
+.cms-login-container {
+  width: 100%;
+  max-width: 440px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--cms-space-6);
+}
+
+.cms-login-brand {
+  text-align: center;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cms-login-logo {
+  width: 64px;
+  height: 64px;
+  border-radius: var(--cms-radius-xl);
+  background: linear-gradient(135deg, var(--cms-color-primary) 0%, #6366f1 100%);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--cms-space-3);
+  box-shadow: 0 10px 25px rgba(79, 70, 229, 0.4);
+}
+
+.cms-login-title {
+  font-size: var(--cms-text-xl);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  margin-bottom: var(--cms-space-1);
+}
+
+.cms-login-subtitle {
+  font-size: var(--cms-text-xs);
+  color: #94a3b8;
+}
+
+.cms-login-card {
+  box-shadow: var(--cms-shadow-xl);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.cms-login-error-banner {
+  display: flex;
+  align-items: center;
+  gap: var(--cms-space-3);
+  background-color: var(--cms-bg-danger);
+  border: 1px solid var(--cms-border-danger);
+  color: var(--cms-text-danger);
+  padding: var(--cms-space-3) var(--cms-space-4);
+  border-radius: var(--cms-radius-md);
+  font-size: var(--cms-text-xs);
+  margin-bottom: var(--cms-space-4);
+}
+
+.cms-login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.cms-role-selector-container {
+  margin-bottom: var(--cms-space-4);
+}
+
+.cms-role-options {
+  display: flex;
+  gap: var(--cms-space-2);
+  margin-top: var(--cms-space-1);
+}
+
+.cms-role-chip {
+  flex: 1;
+  height: 34px;
+  background-color: #f1f5f9;
+  border: 1px solid var(--cms-border-color);
+  border-radius: var(--cms-radius-md);
+  font-size: var(--cms-text-xs);
+  font-weight: 600;
+  color: var(--cms-text-secondary);
+  cursor: pointer;
+  transition: all var(--cms-transition-fast);
+}
+
+.cms-role-chip.active {
+  background-color: var(--cms-color-primary-light);
+  border-color: var(--cms-color-primary);
+  color: var(--cms-color-primary);
+}
+
+.cms-role-warning {
+  font-size: 0.7rem;
+  color: var(--cms-color-warning);
+  margin-top: var(--cms-space-1);
+}
+
+.cms-login-options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--cms-space-5);
+  font-size: var(--cms-text-xs);
+}
+
+.cms-remember-me {
+  display: flex;
+  align-items: center;
+  gap: var(--cms-space-2);
+  color: var(--cms-text-secondary);
+  cursor: pointer;
+}
+
+.cms-forgot-btn {
+  background: transparent;
+  border: none;
+  color: var(--cms-color-primary);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.cms-forgot-btn:hover {
+  text-decoration: underline;
+}
+
+.cms-demo-credentials {
+  margin-top: var(--cms-space-5);
+  padding-top: var(--cms-space-4);
+  border-top: 1px solid var(--cms-border-color);
+  display: flex;
+  flex-direction: column;
+  gap: var(--cms-space-1);
+  font-size: 0.7rem;
+  color: var(--cms-text-muted);
+}
+
+.cms-demo-credentials code {
+  background-color: #f1f5f9;
+  padding: 4px 8px;
+  border-radius: var(--cms-radius-sm);
+  color: var(--cms-text-primary);
+  font-family: monospace;
+}

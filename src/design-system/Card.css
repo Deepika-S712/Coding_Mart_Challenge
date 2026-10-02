@@ -1,0 +1,59 @@
+.cms-card {
+  background-color: var(--cms-bg-surface);
+  border-radius: var(--cms-radius-lg);
+  box-shadow: var(--cms-shadow-sm);
+  transition: transform var(--cms-transition-fast), box-shadow var(--cms-transition-fast);
+  overflow: hidden;
+}
+
+.cms-card-bordered {
+  border: 1px solid var(--cms-border-color);
+}
+
+.cms-card-hoverable:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--cms-shadow-md);
+}
+
+/* Padding scale */
+.cms-card-pad-none { padding: 0; }
+.cms-card-pad-sm { padding: var(--cms-space-3); }
+.cms-card-pad-md { padding: var(--cms-space-5); }
+.cms-card-pad-lg { padding: var(--cms-space-8); }
+
+.cms-card-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--cms-space-1);
+  margin-bottom: var(--cms-space-4);
+}
+
+.cms-card-title {
+  font-size: var(--cms-text-base);
+  font-weight: 600;
+  color: var(--cms-text-primary);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: var(--cms-space-2);
+}
+
+.cms-card-description {
+  font-size: var(--cms-text-xs);
+  color: var(--cms-text-muted);
+  margin: 0;
+}
+
+.cms-card-content {
+  color: var(--cms-text-secondary);
+}
+
+.cms-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--cms-space-3);
+  margin-top: var(--cms-space-5);
+  padding-top: var(--cms-space-4);
+  border-top: 1px solid var(--cms-border-color-subtle);
+}

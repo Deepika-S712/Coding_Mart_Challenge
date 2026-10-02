@@ -1,0 +1,40 @@
+.cms-empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--cms-space-10) var(--cms-space-6);
+  text-align: center;
+  background-color: var(--cms-bg-surface);
+  border: 1px dashed var(--cms-border-color);
+  border-radius: var(--cms-radius-lg);
+  margin: var(--cms-space-4) 0;
+}
+
+.cms-empty-icon {
+  color: var(--cms-text-muted);
+  margin-bottom: var(--cms-space-3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cms-empty-title {
+  font-size: var(--cms-text-base);
+  font-weight: 600;
+  color: var(--cms-text-primary);
+  margin: 0 0 var(--cms-space-1) 0;
+}
+
+.cms-empty-description {
+  font-size: var(--cms-text-sm);
+  color: var(--cms-text-muted);
+  max-width: 420px;
+  margin: 0 0 var(--cms-space-5) 0;
+  line-height: 1.5;
+}
+
+.cms-empty-action {
+  display: flex;
+  justify-content: center;
+}

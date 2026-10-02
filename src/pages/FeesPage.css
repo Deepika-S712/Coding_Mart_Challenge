@@ -1,0 +1,32 @@
+.cms-fees-page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--cms-space-6);
+}
+
+.cms-fee-summary-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cms-fee-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cms-fee-card-label {
+  font-size: var(--cms-text-xs);
+  font-weight: 600;
+  color: var(--cms-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.cms-fee-card-value {
+  font-size: var(--cms-text-2xl);
+  font-weight: 700;
+  color: var(--cms-text-primary);
+  margin: var(--cms-space-2) 0;
+}

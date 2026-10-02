@@ -1,0 +1,33 @@
+.cms-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--cms-space-3) var(--cms-space-4);
+  background-color: var(--cms-bg-surface);
+  border-top: 1px solid var(--cms-border-color);
+  flex-wrap: wrap;
+  gap: var(--cms-space-3);
+}
+
+.cms-pagination-info {
+  font-size: var(--cms-text-xs);
+  color: var(--cms-text-secondary);
+}
+
+.cms-pagination-info span {
+  font-weight: 600;
+  color: var(--cms-text-primary);
+}
+
+.cms-pagination-controls {
+  display: flex;
+  align-items: center;
+  gap: var(--cms-space-2);
+}
+
+.cms-pagination-badge {
+  font-size: var(--cms-text-xs);
+  font-weight: 600;
+  color: var(--cms-text-secondary);
+  padding: 0 var(--cms-space-2);
+}

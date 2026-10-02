@@ -1,0 +1,58 @@
+.cms-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--cms-space-1);
+  font-weight: 600;
+  border-radius: var(--cms-radius-full);
+  white-space: nowrap;
+  letter-spacing: 0.01em;
+  border: 1px solid transparent;
+}
+
+.cms-badge-sm {
+  font-size: 0.7rem;
+  padding: 2px 8px;
+}
+
+.cms-badge-md {
+  font-size: var(--cms-text-xs);
+  padding: 4px 10px;
+}
+
+.cms-badge-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: currentColor;
+}
+
+/* Badge Variants */
+.cms-badge-success {
+  background-color: var(--cms-bg-success);
+  color: var(--cms-text-success);
+  border-color: var(--cms-border-success);
+}
+
+.cms-badge-warning {
+  background-color: var(--cms-bg-warning);
+  color: var(--cms-text-warning);
+  border-color: var(--cms-border-warning);
+}
+
+.cms-badge-error {
+  background-color: var(--cms-bg-danger);
+  color: var(--cms-text-danger);
+  border-color: var(--cms-border-danger);
+}
+
+.cms-badge-info {
+  background-color: var(--cms-bg-info);
+  color: var(--cms-text-info);
+  border-color: var(--cms-border-info);
+}
+
+.cms-badge-neutral {
+  background-color: #f1f5f9;
+  color: var(--cms-text-secondary);
+  border-color: #e2e8f0;
+}

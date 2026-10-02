@@ -1,0 +1,74 @@
+.cms-select-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--cms-space-1);
+  margin-bottom: var(--cms-space-3);
+}
+
+.cms-select-full {
+  width: 100%;
+}
+
+.cms-select-label {
+  font-size: var(--cms-text-xs);
+  font-weight: 600;
+  color: var(--cms-text-secondary);
+  letter-spacing: 0.02em;
+}
+
+.cms-select-field-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.cms-select-field {
+  width: 100%;
+  height: 40px;
+  padding: 0 36px 0 var(--cms-space-3);
+  font-size: var(--cms-text-sm);
+  color: var(--cms-text-primary);
+  background-color: var(--cms-bg-surface);
+  border: 1px solid var(--cms-border-color);
+  border-radius: var(--cms-radius-md);
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+  transition: border-color var(--cms-transition-fast), box-shadow var(--cms-transition-fast);
+}
+
+.cms-select-field:focus {
+  border-color: var(--cms-border-color-focus);
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+}
+
+.cms-select-arrow {
+  position: absolute;
+  right: 12px;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+}
+
+.cms-select-field-container.has-error .cms-select-field {
+  border-color: var(--cms-color-danger);
+}
+
+.cms-select-field-container.is-disabled .cms-select-field {
+  background-color: #f1f5f9;
+  color: var(--cms-text-muted);
+  cursor: not-allowed;
+}
+
+.cms-select-error {
+  font-size: var(--cms-text-xs);
+  color: var(--cms-color-danger);
+  font-weight: 500;
+}
+
+.cms-select-helper {
+  font-size: var(--cms-text-xs);
+  color: var(--cms-text-muted);
+}

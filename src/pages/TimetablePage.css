@@ -1,0 +1,63 @@
+.cms-timetable-page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--cms-space-6);
+}
+
+.cms-day-filter-pills {
+  display: flex;
+  align-items: center;
+  gap: var(--cms-space-2);
+  flex-wrap: wrap;
+}
+
+.cms-day-pill {
+  padding: 6px 14px;
+  border-radius: var(--cms-radius-full);
+  background-color: #f1f5f9;
+  border: 1px solid var(--cms-border-color);
+  font-size: var(--cms-text-xs);
+  font-weight: 600;
+  color: var(--cms-text-secondary);
+  cursor: pointer;
+  transition: all var(--cms-transition-fast);
+}
+
+.cms-day-pill:hover {
+  background-color: #e2e8f0;
+  color: var(--cms-text-primary);
+}
+
+.cms-day-pill.active {
+  background-color: var(--cms-color-primary);
+  border-color: var(--cms-color-primary);
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(79, 70, 229, 0.3);
+}
+
+.cms-active-class-row {
+  background-color: var(--cms-color-primary-light) !important;
+}
+
+.cms-mobile-timetable-cards {
+  display: none;
+  flex-direction: column;
+  gap: var(--cms-space-3);
+}
+
+.cms-mobile-tt-card {
+  padding: var(--cms-space-4);
+  background-color: #f8fafc;
+  border: 1px solid var(--cms-border-color);
+  border-radius: var(--cms-radius-md);
+}
+
+@media (max-width: 768px) {
+  .cms-desktop-timetable {
+    display: none;
+  }
+
+  .cms-mobile-timetable-cards {
+    display: flex;
+  }
+}

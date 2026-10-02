@@ -1,0 +1,111 @@
+.cms-attendance-page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--cms-space-6);
+}
+
+.cms-att-metric-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cms-metric-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cms-metric-title {
+  font-size: var(--cms-text-xs);
+  font-weight: 600;
+  color: var(--cms-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.cms-metric-value {
+  font-size: var(--cms-text-2xl);
+  font-weight: 700;
+  color: var(--cms-text-primary);
+  margin: var(--cms-space-2) 0;
+}
+
+.cms-metric-sub {
+  font-size: var(--cms-text-xs);
+}
+
+/* Bar chart styles */
+.cms-bar-chart-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  height: 180px;
+  padding-top: var(--cms-space-4);
+}
+
+.cms-bar-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--cms-space-2);
+  height: 100%;
+  width: 48px;
+}
+
+.cms-bar-val {
+  font-size: var(--cms-text-xs);
+  font-weight: 600;
+  color: var(--cms-text-secondary);
+}
+
+.cms-bar-track {
+  flex: 1;
+  width: 24px;
+  background-color: #f1f5f9;
+  border-radius: var(--cms-radius-md);
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.cms-bar-fill {
+  width: 100%;
+  border-radius: var(--cms-radius-md) var(--cms-radius-md) 0 0;
+  transition: height 0.5s ease-out;
+}
+
+.fill-emerald { background-color: var(--cms-color-success); }
+.fill-indigo { background-color: var(--cms-color-primary); }
+.fill-amber { background-color: var(--cms-color-warning); }
+
+.cms-bar-label {
+  font-size: var(--cms-text-xs);
+  font-weight: 600;
+  color: var(--cms-text-primary);
+}
+
+.cms-table-filters {
+  display: flex;
+  align-items: center;
+  gap: var(--cms-space-3);
+  flex-wrap: wrap;
+}
+
+/* Progress bar inside table cell */
+.cms-progress-bar {
+  width: 64px;
+  height: 8px;
+  background-color: #f1f5f9;
+  border-radius: var(--cms-radius-full);
+  overflow: hidden;
+}
+
+.cms-progress-fill {
+  height: 100%;
+  border-radius: var(--cms-radius-full);
+}
+
+.fill-green { background-color: var(--cms-color-success); }
+.fill-yellow { background-color: var(--cms-color-warning); }
+.fill-red { background-color: var(--cms-color-danger); }

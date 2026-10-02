@@ -1,0 +1,102 @@
+.cms-exams-page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--cms-space-6);
+}
+
+.cms-next-exam-card {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  color: #ffffff;
+  padding: var(--cms-space-6) var(--cms-space-8);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--cms-space-6);
+}
+
+.cms-next-exam-main {
+  display: flex;
+  flex-direction: column;
+  gap: var(--cms-space-2);
+}
+
+.cms-next-exam-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--cms-space-2);
+  background-color: rgba(99, 102, 241, 0.2);
+  color: #a5b4fc;
+  font-size: var(--cms-text-xs);
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: var(--cms-radius-full);
+  width: fit-content;
+  border: 1px solid rgba(99, 102, 241, 0.3);
+}
+
+.cms-next-exam-title {
+  font-size: var(--cms-text-xl);
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+}
+
+.cms-next-exam-sub {
+  font-size: var(--cms-text-xs);
+  color: #94a3b8;
+  margin: 0;
+}
+
+.cms-next-exam-meta {
+  display: flex;
+  align-items: center;
+  gap: var(--cms-space-4);
+  font-size: var(--cms-text-xs);
+  color: #cbd5e1;
+  margin-top: var(--cms-space-2);
+  flex-wrap: wrap;
+}
+
+.cms-next-exam-meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.cms-next-exam-action {
+  flex-shrink: 0;
+}
+
+.cms-hall-ticket-container {
+  padding: var(--cms-space-4);
+  background-color: #ffffff;
+  border: 1px solid var(--cms-border-color);
+  border-radius: var(--cms-radius-md);
+}
+
+.cms-ticket-header {
+  padding-bottom: var(--cms-space-4);
+  border-bottom: 2px solid var(--cms-text-primary);
+  margin-bottom: var(--cms-space-4);
+}
+
+.cms-ticket-info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--cms-space-3);
+  font-size: var(--cms-text-xs);
+  color: var(--cms-text-secondary);
+  background-color: #f8fafc;
+  padding: var(--cms-space-4);
+  border-radius: var(--cms-radius-md);
+  border: 1px solid var(--cms-border-color);
+}
+
+@media (max-width: 768px) {
+  .cms-next-exam-card {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: var(--cms-space-5);
+  }
+}

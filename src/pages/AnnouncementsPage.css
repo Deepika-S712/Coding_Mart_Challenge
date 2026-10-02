@@ -1,0 +1,68 @@
+.cms-announcements-page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--cms-space-6);
+}
+
+.cms-announcements-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--cms-space-4);
+}
+
+.cms-ann-card {
+  border-left: 4px solid transparent;
+  transition: all var(--cms-transition-fast);
+}
+
+.cms-ann-card.is-unread {
+  border-left-color: var(--cms-color-primary);
+  background-color: #f8fafc;
+}
+
+.cms-new-dot {
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: var(--cms-color-primary);
+  background-color: var(--cms-color-primary-light);
+  padding: 2px 6px;
+  border-radius: var(--cms-radius-sm);
+}
+
+.cms-ann-card-title {
+  font-size: var(--cms-text-base);
+  font-weight: 600;
+  color: var(--cms-text-primary);
+  margin: var(--cms-space-1) 0;
+}
+
+.cms-ann-card-desc {
+  font-size: var(--cms-text-xs);
+  color: var(--cms-text-secondary);
+  line-height: 1.5;
+}
+
+.cms-ann-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: var(--cms-space-3);
+  padding-top: var(--cms-space-3);
+  border-top: 1px solid var(--cms-border-color-subtle);
+  font-size: var(--cms-text-xs);
+  color: var(--cms-text-muted);
+}
+
+.cms-ann-posted-by {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.cms-ann-attachment-badge {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--cms-color-primary);
+  font-weight: 500;
+}

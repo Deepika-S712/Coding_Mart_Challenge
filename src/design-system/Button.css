@@ -1,0 +1,109 @@
+.cms-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--cms-space-2);
+  font-weight: 500;
+  border-radius: var(--cms-radius-md);
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all var(--cms-transition-fast);
+  outline: none;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.cms-btn:focus-visible {
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.35);
+}
+
+.cms-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Sizes */
+.cms-btn-sm {
+  height: 32px;
+  padding: 0 var(--cms-space-3);
+  font-size: var(--cms-text-xs);
+}
+
+.cms-btn-md {
+  height: 40px;
+  padding: 0 var(--cms-space-4);
+  font-size: var(--cms-text-sm);
+}
+
+.cms-btn-lg {
+  height: 48px;
+  padding: 0 var(--cms-space-6);
+  font-size: var(--cms-text-base);
+}
+
+.cms-btn-full {
+  width: 100%;
+}
+
+/* Variants */
+.cms-btn-primary {
+  background-color: var(--cms-color-primary);
+  color: var(--cms-text-inverse);
+}
+.cms-btn-primary:hover:not(:disabled) {
+  background-color: var(--cms-color-primary-hover);
+}
+.cms-btn-primary:active:not(:disabled) {
+  background-color: var(--cms-color-primary-active);
+}
+
+.cms-btn-secondary {
+  background-color: var(--cms-bg-app);
+  color: var(--cms-text-primary);
+  border-color: var(--cms-border-color);
+}
+.cms-btn-secondary:hover:not(:disabled) {
+  background-color: #e2e8f0;
+  border-color: #cbd5e1;
+}
+
+.cms-btn-outline {
+  background-color: transparent;
+  color: var(--cms-color-primary);
+  border-color: var(--cms-color-primary-border);
+}
+.cms-btn-outline:hover:not(:disabled) {
+  background-color: var(--cms-color-primary-light);
+}
+
+.cms-btn-danger {
+  background-color: var(--cms-color-danger);
+  color: var(--cms-text-inverse);
+}
+.cms-btn-danger:hover:not(:disabled) {
+  background-color: #dc2626;
+}
+
+.cms-btn-ghost {
+  background-color: transparent;
+  color: var(--cms-text-secondary);
+}
+.cms-btn-ghost:hover:not(:disabled) {
+  background-color: rgba(0, 0, 0, 0.05);
+  color: var(--cms-text-primary);
+}
+
+/* Spinner */
+.cms-btn-spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid currentColor;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: cms-spin 0.75s linear infinite;
+}
+
+.cms-btn-icon {
+  display: inline-flex;
+  align-items: center;
+}

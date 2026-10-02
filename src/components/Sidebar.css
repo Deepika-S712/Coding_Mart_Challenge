@@ -1,0 +1,219 @@
+.cms-sidebar {
+  width: var(--cms-sidebar-width);
+  height: 100vh;
+  background-color: var(--cms-bg-sidebar);
+  color: var(--cms-color-sidebar-text);
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 900;
+  border-right: 1px solid rgba(255, 255, 255, 0.05);
+  transition: transform var(--cms-transition-normal);
+  user-select: none;
+}
+
+.cms-sidebar-brand {
+  height: var(--cms-navbar-height);
+  display: flex;
+  align-items: center;
+  gap: var(--cms-space-3);
+  padding: 0 var(--cms-space-5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.cms-sidebar-logo-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--cms-radius-md);
+  background: linear-gradient(135deg, var(--cms-color-primary) 0%, #6366f1 100%);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(79, 70, 229, 0.4);
+}
+
+.cms-sidebar-brand-text {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.cms-brand-acronym {
+  font-size: var(--cms-text-base);
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.05em;
+  line-height: 1.1;
+}
+
+.cms-brand-fullname {
+  font-size: 0.65rem;
+  color: #94a3b8;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+.cms-sidebar-mobile-close {
+  background: transparent;
+  border: none;
+  color: #94a3b8;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cms-sidebar-nav {
+  flex: 1;
+  padding: var(--cms-space-4) var(--cms-space-3);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--cms-space-3);
+}
+
+.cms-sidebar-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.cms-sidebar-link {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: var(--cms-space-3);
+  padding: var(--cms-space-3) var(--cms-space-3);
+  background: transparent;
+  border: none;
+  border-radius: var(--cms-radius-md);
+  color: #94a3b8;
+  font-size: var(--cms-text-sm);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--cms-transition-fast);
+  text-align: left;
+}
+
+.cms-sidebar-link:hover {
+  background-color: var(--cms-bg-sidebar-hover);
+  color: #ffffff;
+}
+
+.cms-sidebar-link.active {
+  background-color: var(--cms-color-primary);
+  color: #ffffff;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3);
+}
+
+.cms-sidebar-section {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.cms-sidebar-section-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--cms-space-2) var(--cms-space-3);
+  background: transparent;
+  border: none;
+  color: #64748b;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+}
+
+.cms-sidebar-section-header:hover {
+  color: #94a3b8;
+}
+
+.cms-sidebar-chevron {
+  transition: transform var(--cms-transition-fast);
+}
+
+.cms-sidebar-chevron.expanded {
+  transform: rotate(180deg);
+}
+
+.cms-sidebar-subnav {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding-left: var(--cms-space-2);
+}
+
+.cms-sidebar-sublink {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: var(--cms-space-3);
+  padding: var(--cms-space-2) var(--cms-space-3);
+  background: transparent;
+  border: none;
+  border-radius: var(--cms-radius-md);
+  color: #94a3b8;
+  font-size: var(--cms-text-xs);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--cms-transition-fast);
+  text-align: left;
+}
+
+.cms-sidebar-sublink:hover {
+  background-color: var(--cms-bg-sidebar-hover);
+  color: #ffffff;
+}
+
+.cms-sidebar-sublink.active {
+  background-color: var(--cms-bg-sidebar-active);
+  color: #ffffff;
+  font-weight: 600;
+  border-left: 3px solid var(--cms-color-primary);
+}
+
+.cms-sidebar-link-icon {
+  display: flex;
+  align-items: center;
+}
+
+.cms-sidebar-footer {
+  padding: var(--cms-space-3) var(--cms-space-4);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.cms-sidebar-version {
+  font-size: 0.65rem;
+  color: #64748b;
+  text-align: center;
+}
+
+/* Mobile responsive drawer */
+@media (max-width: 768px) {
+  .cms-sidebar {
+    transform: translateX(-100%);
+  }
+
+  .cms-sidebar.is-mobile-open {
+    transform: translateX(0);
+  }
+
+  .cms-sidebar-mobile-backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 850;
+    background-color: rgba(15, 23, 42, 0.6);
+    backdrop-filter: blur(2px);
+  }
+}

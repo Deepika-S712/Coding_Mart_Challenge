@@ -1,0 +1,97 @@
+/* CMS-DS v1.0 Core Design System Tokens */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* Typography */
+  --cms-font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  
+  /* Font Sizes */
+  --cms-text-xs: 0.75rem;     /* 12px */
+  --cms-text-sm: 0.875rem;    /* 14px */
+  --cms-text-base: 1rem;      /* 16px */
+  --cms-text-lg: 1.125rem;    /* 18px */
+  --cms-text-xl: 1.25rem;     /* 20px */
+  --cms-text-2xl: 1.5rem;     /* 24px */
+  --cms-text-3xl: 1.875rem;   /* 30px */
+
+  /* Spacing Grid (8px System) */
+  --cms-space-1: 0.25rem;     /* 4px */
+  --cms-space-2: 0.5rem;      /* 8px */
+  --cms-space-3: 0.75rem;     /* 12px */
+  --cms-space-4: 1rem;        /* 16px */
+  --cms-space-5: 1.25rem;     /* 20px */
+  --cms-space-6: 1.5rem;      /* 24px */
+  --cms-space-8: 2rem;        /* 32px */
+  --cms-space-10: 2.5rem;     /* 40px */
+  --cms-space-12: 3rem;       /* 48px */
+
+  /* Color Palette - Brand Primary */
+  --cms-color-primary: #4f46e5;
+  --cms-color-primary-hover: #4338ca;
+  --cms-color-primary-active: #3730a3;
+  --cms-color-primary-light: #eef2ff;
+  --cms-color-primary-border: #c7d2fe;
+
+  /* Neutrals & Surfaces */
+  --cms-bg-app: #f8fafc;
+  --cms-bg-surface: #ffffff;
+  --cms-bg-sidebar: #0f172a;
+  --cms-bg-sidebar-hover: #1e293b;
+  --cms-bg-sidebar-active: #334155;
+  --cms-color-sidebar-text: #94a3b8;
+  --cms-color-sidebar-text-active: #ffffff;
+
+  /* Borders & Dividers */
+  --cms-border-color: #e2e8f0;
+  --cms-border-color-subtle: #f1f5f9;
+  --cms-border-color-focus: #818cf8;
+
+  /* Text Colors */
+  --cms-text-primary: #0f172a;
+  --cms-text-secondary: #475569;
+  --cms-text-muted: #94a3b8;
+  --cms-text-inverse: #ffffff;
+
+  /* Status / Feedback Colors */
+  --cms-color-success: #10b981;
+  --cms-bg-success: #ecfdf5;
+  --cms-text-success: #065f46;
+  --cms-border-success: #a7f3d0;
+
+  --cms-color-warning: #f59e0b;
+  --cms-bg-warning: #fffbeb;
+  --cms-text-warning: #92400e;
+  --cms-border-warning: #fde68a;
+
+  --cms-color-danger: #ef4444;
+  --cms-bg-danger: #fef2f2;
+  --cms-text-danger: #991b1b;
+  --cms-border-danger: #fecaca;
+
+  --cms-color-info: #3b82f6;
+  --cms-bg-info: #eff6ff;
+  --cms-text-info: #1e40af;
+  --cms-border-info: #bfdbfe;
+
+  /* Radii Scale (Standard 8px for controls) */
+  --cms-radius-sm: 4px;
+  --cms-radius-md: 8px;       /* Control standard */
+  --cms-radius-lg: 12px;
+  --cms-radius-xl: 16px;
+  --cms-radius-full: 9999px;
+
+  /* Elevation & Shadows */
+  --cms-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --cms-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -1px rgba(0, 0, 0, 0.04);
+  --cms-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.03);
+  --cms-shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+  /* Layout Constants */
+  --cms-navbar-height: 64px;
+  --cms-sidebar-width: 260px;
+  --cms-sidebar-collapsed-width: 72px;
+
+  /* Transitions */
+  --cms-transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --cms-transition-normal: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
