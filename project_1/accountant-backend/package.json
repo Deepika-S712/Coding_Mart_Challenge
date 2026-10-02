@@ -1,0 +1,30 @@
+{
+  "name": "accountant-backend",
+  "version": "1.0.0",
+  "description": "Accountant Module Backend for College Management System (CMS)",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "db:init": "node scripts/initDb.js",
+    "db:seed": "node scripts/seedData.js"
+  },
+  "keywords": [
+    "cms",
+    "accountant",
+    "finance",
+    "express",
+    "postgresql"
+  ],
+  "author": "CMS Accountant Team",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.12.0"
+  },
+  "devDependencies": {}
+}
