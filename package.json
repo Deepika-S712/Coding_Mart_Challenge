@@ -1,0 +1,22 @@
+{
+  "name": "college-management-admin-root",
+  "version": "1.0.0",
+  "description": "Admin-Only College Management System",
+  "scripts": {
+    "start": "npm run start --prefix backend",
+    "dev:backend": "npm run dev --prefix backend",
+    "dev:frontend": "npm run dev --prefix frontend",
+    "seed": "npm run seed --prefix backend",
+    "init-db": "npm run init-db --prefix backend",
+    "build:frontend": "npm run build --prefix frontend"
+  },
+  "keywords": [
+    "college-management",
+    "admin-only",
+    "react",
+    "express",
+    "postgresql"
+  ],
+  "author": "",
+  "license": "ISC"
+}
